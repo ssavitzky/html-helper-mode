@@ -471,14 +471,14 @@ appropriate keymap if a key is requested. Format:
    (anchor  "l"	      "<a href="        "Hyperlink"          	  ("<a href=\"" (p "URL: ") "\">" (r "Anchor text: ") "</a>"))                
 
    ;;graphics
-   (image   "a"       nil               "Aligned Image"	  ("<img align=\"" (r "Alignment: ") "\" src=\"" (r "Image URL: ") "\">"))
-   (image   "i"       "<img src="	"Image"		  ("<img src=\"" (r "Image URL: ") "\">"))
-   (image   "e"       "<img align="     "Aligned Image With Alt. Text"	  ("<img align=\"" (r "Alignment: ") "\" src=\"" (r "Image URL: ") "\" alt=\"" (r "Text URL: ") "\">"))
-   (image   "t"       "<img alt="	"Image With Alternate Text"	  ("<img alt=\"" (r "Text URL: ") "\" src=\"" (r "Image URL: ") "\">"))
+   (image   "a"       nil               "Aligned Image"	  ("<img align=\"" (r "Alignment: ") "\" src=\"" (r "Image URL: ") "\" />"))
+   (image   "i"       "<img src="	"Image"		  ("<img src=\"" (r "Image URL: ") "\" />"))
+   (image   "e"       "<img align="     "Aligned Image With Alt. Text"	  ("<img align=\"" (r "Alignment: ") "\" src=\"" (r "Image URL: ") "\" alt=\"" (r "Text URL: ") "\" />"))
+   (image   "t"       "<img alt="	"Image With Alternate Text"	  ("<img alt=\"" (r "Text URL: ") "\" src=\"" (r "Image URL: ") "\" />"))
 
    ;;text elements
-   (textel  "\C-c="    nil		"Horizontal Line"	  (& "<hr>\n"))
-   (textel  "\C-c\C-m" nil		"Line Break"		  ("<br>\n"))
+   (textel  "\C-c="    nil		"Horizontal Line"	  (& "<hr />\n"))
+   (textel  "\C-c\C-m" nil		"Line Break"		  ("<br />\n"))
    (textel  "\e\C-m"  nil		"Paragraph"	  ("<p>\n"))
 
    ;;head elements
