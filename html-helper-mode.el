@@ -417,6 +417,7 @@ appropriate keymap if a key is requested. Format:
    
    ;; logical styles
    (logical "b"       "<blockquote>"	"Blockquote"     	  ("<blockquote>" (r "Quote: ") "</blockquote>"))
+   (logical "q"       "<q>"		"Quotation"   	          ("<q>" (r "Quote: ") "</q>"))
    (logical "c"       "<code>"		"Code"           	  ("<code>" (r "Code: ") "</code>"))
    (logical "x"       "<samp>"		"Sample"         	  ("<samp>" (r "Sample code") "</samp>"))
    (logical "r"       "<cite>"		"Citation"       	  ("<cite>" (r "Citation: ") "</cite>"))
