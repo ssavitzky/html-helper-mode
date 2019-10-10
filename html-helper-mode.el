@@ -459,28 +459,28 @@ appropriate keymap if a key is requested. Format:
    (form    "f"	      "<form"           "Form"		          ("<form action=\"" (p "Action: ") "\" method=\"" (p "Method: ") "\">\n</form>\n"))
 
    ;;lists
-   (list    "t"       "<dt>"            "Definition Item"         (& "<dt>" > (p "Term: ") "\n<dd>" > (r "Definition: ")))
-   (list    "l"       "<li>"            "List Item"               (& "<li>" > (r "Item: ")))
-   (list    "r"	      "<dir>"		"DirectoryList"      	  (& "<dir>" > "\n<li>" > (r "Item: ") "\n</dir>" >))
-   (list    "m"	      "<menu>"		"Menu List"		  (& "<menu>" > "\n<li>" > (r "Item: ") "\n</menu>" >))
-   (list    "o"	      "<ol>"		"Ordered List"   	  (& "<ol>" > "\n<li>" > (r "Item: ") "\n</ol>" >))
-   (list    "d"	      "<dl>"		"Definition List" 	  (& "<dl>" > "\n<dt>" > (p "Term: ") "\n<dd>" > (r "Definition: ") "\n</dl>" >))
-   (list    "u"	      "<ul>"		"Unordered List" 	  (& "<ul>" > "\n<li>" > (r "Item: ") "\n</ul>" >))
+   (list    "t"       "<dt>"            "Definition Item"         (& "<dt> " > (p "Term: ") "\n<dd> " > (r "Definition: ")))
+   (list    "l"       "<li>"            "List Item"               (& "<li> " > (r "Item: ")))
+   (list    "r"	      "<dir>"		"DirectoryList"      	  (& "<dir>" > "\n<li> " > (r "Item: ") "\n</dir>" >))
+   (list    "m"	      "<menu>"		"Menu List"		  (& "<menu>" > "\n<li> " > (r "Item: ") "\n</menu>" >))
+   (list    "o"	      "<ol>"		"Ordered List"   	  (& "<ol>" > "\n<li> " > (r "Item: ") "\n</ol>" >))
+   (list    "d"	      "<dl>"		"Definition List" 	  (& "<dl>" > "\n<dt> " > (p "Term: ") "\n<dd>" > (r "Definition: ") "\n</dl>" >))
+   (list    "u"	      "<ul>"		"Unordered List" 	  (& "<ul>" > "\n<li> " > (r "Item: ") "\n</ul>" >))
 
    ;;anchors
    (anchor  "n"	      "<a name="	"Link Target"	  ("<a name=\"" (p "Anchor name: ") "\">" (r "Anchor text: ") "</a>"))
    (anchor  "l"	      "<a href="        "Hyperlink"          	  ("<a href=\"" (p "URL: ") "\">" (r "Anchor text: ") "</a>"))                
 
    ;;graphics
-   (image   "a"       nil               "Aligned Image"	  ("<img align=\"" (r "Alignment: ") "\" src=\"" (r "Image URL: ") "\" />"))
-   (image   "i"       "<img src="	"Image"		  ("<img src=\"" (r "Image URL: ") "\" />"))
-   (image   "e"       "<img align="     "Aligned Image With Alt. Text"	  ("<img align=\"" (r "Alignment: ") "\" src=\"" (r "Image URL: ") "\" alt=\"" (r "Text URL: ") "\" />"))
-   (image   "t"       "<img alt="	"Image With Alternate Text"	  ("<img alt=\"" (r "Text URL: ") "\" src=\"" (r "Image URL: ") "\" />"))
+   (image   "a"       nil               "Aligned Image"	  ("<img align=\"" (r "Alignment: ") "\" src=\"" (r "Image URL: ") "\">"))
+   (image   "i"       "<img src="	"Image"		  ("<img src=\"" (r "Image URL: ") "\">"))
+   (image   "e"       "<img align="     "Aligned Image With Alt. Text"	  ("<img align=\"" (r "Alignment: ") "\" src=\"" (r "Image URL: ") "\" alt=\"" (r "Text URL: ") "\">"))
+   (image   "t"       "<img alt="	"Image With Alternate Text"	  ("<img alt=\"" (r "Text URL: ") "\" src=\"" (r "Image URL: ") "\">"))
 
    ;;text elements
-   (textel  "\C-c="    nil		"Horizontal Line"	  (& "<hr />\n"))
-   (textel  "\C-c\C-m" nil		"Line Break"		  ("<br />\n"))
-   (textel  "\e\C-m"  nil		"Paragraph"	  ("<p>\n"))
+   (textel  "\C-c="    nil		"Horizontal Line"	  (& "<hr>\n"))
+   (textel  "\C-c\C-m" nil		"Line Break"		  ("<br>\n"))
+   (textel  "\e\C-m"  nil		"Paragraph"	  ("<p> \n"))
 
    ;;head elements
    (head    "H"       "<head>"          "Head"            ("<head>\n" "</head>\n"))
